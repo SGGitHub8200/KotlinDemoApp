@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Calculator"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/et_monthlyamnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly Deposit Amount"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_rateofinterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Interest Rate"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et_monthlyamnt"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_tenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Period in Years"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_rateofinterest"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tenure"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+    <Button
+        android:id="@+id/btn_calPPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate PPF"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_calRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Calculate RD"
+        android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_maturityAmnt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_btn"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/tv_totalAmntInvest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_totalIntrestAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tv_totalMaturityAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

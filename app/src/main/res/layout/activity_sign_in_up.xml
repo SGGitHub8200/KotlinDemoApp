@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInUp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kotlin"/>
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       Demo"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="@color/cardview_dark_background"
+        android:fontFamily="serif-monospace"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signIn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="Sign In."
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User. Sign Up here."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/splash_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0d000000"
+        android:elevation="5dp"
+        android:focusableInTouchMode="true" />
+
+</RelativeLayout>
