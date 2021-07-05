@@ -34,9 +34,11 @@ class FragmentSignIn : Fragment() {
         var view = inflater.inflate(R.layout.fragment_sign_in, container, false)
         appDB = context?.let { AppDatabase.getAppDataBase(it) }
         var stud = appDB?.userDao()?.getAllUser()?.size
+/*
         if (stud != null) {
-            Toast.makeText(activity, stud.toString(), Toast.LENGTH_LONG).show()
+            //Toast.makeText(activity, stud.toString(), Toast.LENGTH_LONG).show()
         }
+*/
 
         view.btn_signIn.setOnClickListener(View.OnClickListener {
             if (!TextUtils.isEmpty(tie_userMobile.text.toString()) && !TextUtils.isEmpty(

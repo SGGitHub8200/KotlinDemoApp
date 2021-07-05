@@ -20,20 +20,21 @@
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/btn_click"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
-        android:text="Click Me!"
+        android:text="Quotes"
         android:textColor="@color/colorPrimary"
         android:layout_below="@+id/et_user"
         app:cornerRadius="20dp"
         app:strokeColor="@color/colorPrimary"
         app:strokeWidth="2dp"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp"
+        android:layout_marginEnd="10dp"/>
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/btn_share"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
         android:text="Share"
         android:layout_below="@+id/et_user"
@@ -47,19 +48,20 @@
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/btn_recyclerView"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
         android:text="RecyclerView"
         android:layout_below="@+id/btn_click"
         app:cornerRadius="20dp"
         app:strokeColor="@color/colorPrimary"
         app:strokeWidth="2dp"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp"
+        android:layout_marginEnd="10dp"/>
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/btn_calculator"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
         android:text="Calculator"
         android:layout_below="@+id/btn_click"

@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Quotes.QuoteActivity"></activity>
         <activity android:name=".SignInUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,16 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_Calculator">
-        </activity>
+        <activity android:name=".Activity_Calculator"></activity>
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
-<!--            <intent-filter>
+
+            <!--
+                <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
     </application>
 

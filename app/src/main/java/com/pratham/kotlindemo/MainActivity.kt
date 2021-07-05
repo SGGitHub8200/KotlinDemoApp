@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.pratham.kotlindemo.Quotes.QuoteActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_click.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("user_name",et_user.text.toString())
+            val intent = Intent(this, QuoteActivity::class.java)
             startActivity(intent)
         }
 

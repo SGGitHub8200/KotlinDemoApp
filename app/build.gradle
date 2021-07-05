@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.pratham.kotlindemo"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -52,6 +52,10 @@ dependencies {
     implementation 'androidx.room:room-runtime:2.3.0'
     annotationProcessor "androidx.room:room-compiler:2.3.0"
     kapt 'androidx.room:room-compiler:2.3.0'
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 }
 allOpen {
     annotation("org.androidannotations:androidannotations")
